@@ -1,12 +1,15 @@
 import './App.css';
+import { FluentProvider, teamsLightTheme } from '@fluentui/react-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <FluentProvider theme={teamsLightTheme}>
+      <div className="App">
+        <header className="App-header">
           Text
-      </header>
-    </div>
+        </header>
+      </div>
+    </FluentProvider>
   );
 }
 
